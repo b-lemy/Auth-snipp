@@ -11,6 +11,11 @@ return new class extends Migration {
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
+            $table->string('phone');
+            $table->string('company');
+            $table->string('country');
+            $table->string('state');
+            $table->enum('currency', ['USD', 'TSH']);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

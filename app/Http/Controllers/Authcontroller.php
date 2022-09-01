@@ -42,6 +42,11 @@ class Authcontroller extends Controller
             'first_name' => $request->input('first_name'),
             'last_name' => $request->input('last_name'),
             'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
+            'company' => $request->input('company'),
+            'country' => $request->input('country'),
+            'currency' => $request->input('currency'),
+            'state' => $request->input('state'),
             'password' => Hash::make($request->input('password')),
             'role_id' => $request->input('role_id')
 
@@ -52,7 +57,7 @@ class Authcontroller extends Controller
 
     }
 
- 
+
     public function forgot(ForgotRequest $request)
     {
         $email = $request->input('email');

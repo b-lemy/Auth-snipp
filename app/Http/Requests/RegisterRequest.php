@@ -18,10 +18,15 @@ class RegisterRequest extends FormRequest
         return [
             'first_name' => 'required',
             'last_name' => 'required',
+            'company' => 'required',
+            'country' => 'required',
+            'state' => 'required',
+            'currency' => 'required',
+            'phone' => ' required|digits:10',
             'email' => 'required|email|unique:users',
             'password' => 'required',
             'confirm_password' => 'required|same:password',
-            //  'role_id' => 'required',
+
         ];
     }
 }
