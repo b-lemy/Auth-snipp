@@ -2,5 +2,5 @@
 
 ## About Hover
 
-Laravel is a web application framework with expressive,
+Laravel backend application with expressive,
 on progress
